@@ -59,11 +59,6 @@ You can add screenshots of the Home page and other sections here after deploymen
 - More animations
 - Multi-language support
 
-## Live Demo
-
-Add your deployed GitHub Pages or Netlify link here after deployment.
-
-Example:
 
 ## Live Demo
 
