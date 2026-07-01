@@ -1,0 +1,364 @@
+/* ---------- Google Font ---------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f4f6f9;
+    color:#333;
+    line-height:1.6;
+}
+
+/* ---------- Navbar ---------- */
+
+header{
+    width:100%;
+    background:#ffffff;
+    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.navbar{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    height:70px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.nav-right{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo{
+    color:#2563eb;
+    font-size:28px;
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:30px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#2563eb;
+}
+
+/* ---------- Hero ---------- */
+
+.hero{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    min-height:85vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:50px;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-text h1{
+    font-size:48px;
+    margin-bottom:15px;
+}
+
+.hero-text span{
+    color:#2563eb;
+}
+
+.hero-text h3{
+    margin-bottom:20px;
+    color:#666;
+}
+
+.hero-text p{
+    margin-bottom:30px;
+    max-width:550px;
+}
+
+.btn{
+    display:inline-block;
+    text-decoration:none;
+    background:#2563eb;
+    color:white;
+    padding:12px 28px;
+    border-radius:6px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#1d4ed8;
+}
+
+.hero-image{
+    flex:1;
+    text-align:center;
+}
+
+.hero-image img{
+    width:330px;
+    border-radius:50%;
+    border:6px solid white;
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
+}
+
+/* ---------- Common Section ---------- */
+
+section{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:90px 0;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:36px;
+    color:#2563eb;
+}
+
+/* ---------- About ---------- */
+
+#about p{
+    max-width:800px;
+    margin:auto;
+    text-align:center;
+    font-size:18px;
+}
+
+/* ---------- Skills ---------- */
+
+.skill-box{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+    gap:25px;
+}
+
+.skill{
+    background:white;
+    border-radius:10px;
+    padding:30px;
+    text-align:center;
+    transition:.3s;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.skill:hover{
+    transform:translateY(-8px);
+}
+
+.skill i{
+    font-size:45px;
+    color:#2563eb;
+    margin-bottom:15px;
+}
+
+.skill p{
+    font-weight:500;
+}
+
+/* ---------- Projects ---------- */
+
+.project-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.project-card{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.project-card p{
+    flex-grow: 1; 
+    margin-bottom:20px;        
+}
+
+.project-card h3{
+    margin-bottom:15px;
+}
+
+.project-card a{
+    text-decoration:none;
+    color:white;
+    background:#2563eb;
+    padding:10px 18px;
+    border-radius:5px;
+    display:inline-block;
+
+    width: fit-content;
+
+    margin-top: auto;
+}
+
+/* ---------- Contact ---------- */
+
+form{
+    max-width:650px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+input,
+textarea{
+    padding:14px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    outline:none;
+}
+
+button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:14px;
+    border-radius:6px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+
+/* ---------- Footer ---------- */
+
+footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:35px 20px;
+}
+
+.social-links{
+    margin-bottom:20px;
+}
+
+.social-links a{
+    color:white;
+    font-size:24px;
+    margin:0 12px;
+    transition:.3s;
+}
+
+.social-links a:hover{
+    color:#60a5fa;
+}
+
+/* ---------- Responsive ---------- */
+
+@media(max-width:900px){
+
+.hero{
+    flex-direction:column-reverse;
+    text-align:center;
+    padding-top:40px;
+}
+
+.hero-text p{
+    margin:auto;
+    margin-bottom:25px;
+}
+
+.navbar{
+    flex-direction:column;
+    height:auto;
+    padding:20px 0;
+}
+
+.nav-links{
+    margin-top:15px;
+}
+
+.hero-image img{
+    width:260px;
+}
+
+.hero-text h1{
+    font-size:38px;
+}
+
+}
+
+/* Dark Mode Button */
+
+#theme-toggle{
+    background:none;
+    border:none;
+    font-size:24px;
+    cursor:pointer;
+    color:#2563eb;
+    padding:5px;
+
+    margin-left:20px; 
+}
+
+/* Dark Theme */
+
+body.dark{
+    background:#121212;
+    color:white;
+}
+
+body.dark header{
+    background:#1f1f1f;
+}
+
+body.dark .project-card,
+body.dark .skill{
+    background:#222;
+    color:white;
+}
+
+body.dark input,
+body.dark textarea{
+    background:#2b2b2b;
+    color:white;
+    border:1px solid #555;
+}
+
+body.dark .nav-links a{
+    color:#ffffff;
+}
+
+body.dark .nav-links a:hover{
+    color:#3b82f6;
+}
